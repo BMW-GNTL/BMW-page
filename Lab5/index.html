@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نبذة عن شركة BMW</title>
+  <style>
+    :root {
+      --bg-color-light: #fdfdfd;
+      --text-color-light: #222;
+      --card-bg-light: #ffffff;
+      --bg-color-dark: #121212;
+      --text-color-dark: #e5e5e5;
+      --card-bg-dark: #1e1e1e;
+      --accent-color: #007bb5; 
+    }
+
+  
+    body {
+      background-color: var(--bg-color-light);
+      color: var(--text-color-light);
+      font-family: "Tahoma", Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    body.dark {
+      background-color: var(--bg-color-dark);
+      color: var(--text-color-dark);
+    }
+
+    .toggle-button {
+      display: inline-block;
+      margin: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .toggle-button.light {
+      background-color: var(--accent-color);
+      color: #fff;
+    }
+    .toggle-button.dark {
+      background-color: #f5f5f5;
+      color: var(--accent-color);
+      border: 1px solid #ccc;
+    }
+
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      background-color: var(--card-bg-light);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+ 
+    body.dark .grid-item {
+      background-color: var(--card-bg-dark);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent-color);
+    }
+
+    ul {
+      list-style: none;
+      padding-right: 0;
+    }
+
+    ul li {
+      margin-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+
+    body.dark th, body.dark td {
+      border-color: #444;
+    }
+  </style>
+</head>
+<body>
+  
+  <button id="toggleMode" class="toggle-button light">تغيير الوضع إلى الداكن</button>
+
+
+  <div class="grid-container">
+   
+    <div class="grid-item">
+      <h2>نبذة عن BMW</h2>
+      <p>BMW (اختصار لـ <strong>Bayerische Motoren Werke</strong>) هي شركة ألمانية لصناعة السيارات والدراجات النارية الفاخرة. تأسست في <strong>7 مارس 1916</strong> ويقع مقرها الرئيسي في مدينة ميونخ، ألمانيا. تشتهر الشركة بتطوير سيارات عالية الأداء والدقة، وتضم علامات تجارية تابعة مثل MINI وRolls‑Royce.</p>
+    </div>
+
+    
+    <div class="grid-item">
+      <h2>سلسلة السيدان</h2>
+      <p>تقدم BMW مجموعة من سيارات السيدان الفاخرة التي تجمع بين الأداء والراحة:</p>
+      <ul>
+        <li>BMW الفئة الثالثة (3 Series)</li>
+        <li>BMW الفئة الخامسة (5 Series)</li>
+        <li>BMW الفئة السابعة (7 Series)</li>
+      </ul>
+    </div>
+
+   
+    <div class="grid-item">
+      <h2>سلسلة X (SUV)</h2>
+      <p>تغطي سلسلة X مجموعة من سيارات الـSUV متعددة الاستخدامات:</p>
+      <ul>
+        <li>BMW X1 وX3 للأحجام المدمجة والمتوسطة</li>
+        <li>BMW X5 وX7 للأحجام الكبيرة والفاخرة</li>
+        <li>طرازات M للأداء العالي مثل X5 M وX6 M</li>
+      </ul>
+    </div>
+
+    
+    <div class="grid-item">
+      <h2>سلسلة i الكهربائية</h2>
+      <p>تعكس سلسلة i التوجه نحو السيارات الكهربائية بالكامل:</p>
+      <ul>
+        <li>BMW i4 – سيدان كهربائية رياضية</li>
+        <li>BMW i5 – سيدان تنفيذية كهربائية</li>
+        <li>BMW i7 – سيدان فاخرة كهربائية</li>
+        <li>BMW iX – SUV كهربائي فاخر</li>
+      </ul>
+    </div>
+
+    
+    <div class="grid-item">
+      <h2>سلسلة الأداء M</h2>
+      <p>تُعرف فئة M بالأداء الرياضي والأرقام القوية:</p>
+      <ul>
+        <li>BMW M2 – كوبيه رياضية مدمجة</li>
+        <li>BMW M3 – سيدان رياضية</li>
+        <li>BMW M4 – كوبيه/كابريوليه رياضية</li>
+        <li>BMW M5 – سيدان فاخرة بأداء عالٍ</li>
+      </ul>
+    </div>
+
+   
+    <div class="grid-item">
+      <h2>جدول مقارنة بين الفئات</h2>
+      <table>
+        <tr>
+          <th>الفئة</th>
+          <th>النوع</th>
+          <th>مميزات</th>
+        </tr>
+        <tr>
+          <td>السيدان</td>
+          <td>فاخرة</td>
+          <td>راحة وأداء متوازن</td>
+        </tr>
+        <tr>
+          <td>الـSUV (X)</td>
+          <td>رياضية متعددة الاستخدام</td>
+          <td>مساحة واسعة وقدرة على الطرق المختلفة</td>
+        </tr>
+        <tr>
+          <td>الكهربائية (i)</td>
+          <td>سيارات كهربائية</td>
+          <td>صفر انبعاثات وتقنيات متطورة</td>
+        </tr>
+        <tr>
+          <td>الأداء (M)</td>
+          <td>رياضية عالية الأداء</td>
+          <td>قوة وسرعة واستجابة فائقة</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const toggleButton = document.getElementById('toggleMode');
+    const bodyElement   = document.body;
+
+    function toggleMode() {
+      const isDark = bodyElement.classList.toggle('dark');
+      if (isDark) {
+        toggleButton.textContent = 'تغيير الوضع إلى الفاتح';
+        toggleButton.classList.remove('light');
+        toggleButton.classList.add('dark');
+      } else {
+        toggleButton.textContent = 'تغيير الوضع إلى الداكن';
+        toggleButton.classList.remove('dark');
+        toggleButton.classList.add('light');
+      }
+    }
+
+    toggleButton.addEventListener('click', toggleMode);
+  </script>
+</body>
+</html>
